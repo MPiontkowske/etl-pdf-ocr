@@ -1,33 +1,39 @@
-# ETL Inteligente de PDF (Python + OCR)
+# ETL Inteligente de PDF com OCR (Python)
 
-Pipeline profissional de extração de texto de PDF usando:
+Pipeline profissional para extração de texto de PDFs combinando:
 
-- PyPDF2 (extração nativa)
-- Tesseract OCR (fallback para PDFs escaneados)
-- Pré-processamento de imagem (Pillow)
-- Estrutura modular (funções separadas)
-- Logs, tratamento de erro e limpeza de texto
+- Extração nativa com **PyPDF2**
+- OCR automático com **Tesseract**
+- Conversão PDF → Imagem com **pdf2image**
+- Pré-processamento inteligente de imagem com **Pillow**
+- Fallback automático (OCR só quando necessário)
+- Estrutura modular para escalabilidade
+- Tratamento de erros por arquivo
+- Registro de logs
+- Preparado para integração com banco de dados
 
-## Estrutura do Projeto
+---
+
+## 🧠 Arquitetura do Projeto
+
 etl_pdf/
 ├── entrada/ # PDFs para processar
 ├── saida/ # Textos extraídos
-├── logs/ # Logs do ETL
-├── funcoes/ # Funções do pipeline
-│ ├── extrair.py
-│ ├── limpar.py
-│ ├── ocr.py
-│ └── preprocessar.py
+├── logs/ # Registros automáticos
+├── funcoes/
+│ ├── extrair.py # Extrator nativo + fallback OCR
+│ ├── limpar.py # Sanitização do texto
+│ ├── ocr.py # Funções de OCR (imagem + PDF)
+│ └── preprocessar.py # Filtros de imagem
 ├── executar.py # Pipeline principal
 ├── README.md
 
-## Como rodar
+---
 
-1. Ativar ambiente virtual  
-2. Instalar dependências  
-3. Colocar PDFs na pasta `entrada/`  
-4. Executar:
+## 🚀 Como executar o ETL
 
+### 1. Criar ambiente virtual
 ```bash
-python3 executar.py
+python3 -m venv venv
+source venv/bin/activate
 
