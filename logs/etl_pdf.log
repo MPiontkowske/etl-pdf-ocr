@@ -1,0 +1,35 @@
+[2025-11-30 18:02:07] Iniciando extração de B3 _ Relatório Anual 2024.pdf
+[2025-11-30 18:02:10] Concluido: saida/B3 _ Relatório Anual 2024.txt
+[2025-11-30 18:02:10] Iniciando extração de arquivo.pdf
+[2025-11-30 18:02:14] Concluido: saida/arquivo.txt
+[2025-11-30 18:02:14] Iniciando extração de bb516353-43d4-e305-c4eb-d82d1ebc89a3.pdf
+[2025-11-30 18:02:22] Concluido: saida/bb516353-43d4-e305-c4eb-d82d1ebc89a3.txt
+[2025-11-30 18:42:45] Iniciando extração de B3 _ Relatório Anual 2024.pdf
+[2025-11-30 18:43:25] Iniciando extração de B3 _ Relatório Anual 2024.pdf
+[2025-11-30 18:43:28] ERRO ao processar B3 _ Relatório Anual 2024.pdf: name 'texto_pagonas' is not defined
+[2025-11-30 18:43:28] Iniciando extração de arquivo.pdf
+[2025-11-30 18:43:32] ERRO ao processar arquivo.pdf: name 'texto_pagonas' is not defined
+[2025-11-30 18:43:32] Iniciando extração de bb516353-43d4-e305-c4eb-d82d1ebc89a3.pdf
+[2025-11-30 18:43:40] ERRO ao processar bb516353-43d4-e305-c4eb-d82d1ebc89a3.pdf: name 'texto_pagonas' is not defined
+[2025-11-30 18:46:24] Iniciando extração de B3 _ Relatório Anual 2024.pdf
+[2025-11-30 18:46:28] Concluido: saida/B3 _ Relatório Anual 2024.txt
+[2025-11-30 18:46:28] Iniciando extração de arquivo.pdf
+[2025-11-30 18:46:32] Concluido: saida/arquivo.txt
+[2025-11-30 18:46:32] Iniciando extração de bb516353-43d4-e305-c4eb-d82d1ebc89a3.pdf
+[2025-11-30 18:46:41] Concluido: saida/bb516353-43d4-e305-c4eb-d82d1ebc89a3.txt
+[2025-12-03 16:12:14] Iniciando extração de B3 _ Relatório Anual 2024.pdf
+[2025-12-03 16:12:20] Concluido: saida/B3 _ Relatório Anual 2024.txt
+[2025-12-03 16:12:20] Iniciando extração de arquivo.pdf
+[2025-12-03 16:12:26] Concluido: saida/arquivo.txt
+[2025-12-03 16:12:26] Iniciando extração de bb516353-43d4-e305-c4eb-d82d1ebc89a3.pdf
+[2025-12-03 16:12:37] Concluido: saida/bb516353-43d4-e305-c4eb-d82d1ebc89a3.txt
+[2025-12-03 16:12:37] Iniciando extração de teste_ocr.pdf
+[2025-12-03 16:12:42] Concluido: saida/teste_ocr.txt
+[2025-12-03 22:00:17] Iniciando extração de B3 _ Relatório Anual 2024.pdf
+[2025-12-03 22:00:24] Concluido: saida/B3 _ Relatório Anual 2024.txt
+[2025-12-03 22:00:24] Iniciando extração de arquivo.pdf
+[2025-12-03 22:00:33] Concluido: saida/arquivo.txt
+[2025-12-03 22:00:33] Iniciando extração de bb516353-43d4-e305-c4eb-d82d1ebc89a3.pdf
+[2025-12-03 22:00:49] Concluido: saida/bb516353-43d4-e305-c4eb-d82d1ebc89a3.txt
+[2025-12-03 22:00:49] Iniciando extração de teste_ocr.pdf
+[2025-12-03 22:00:54] Concluido: saida/teste_ocr.txt
