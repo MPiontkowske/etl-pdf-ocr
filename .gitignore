@@ -1,0 +1,38 @@
+# ================================
+# Python cache
+# ================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ================================
+# Ambiente virtual
+# ================================
+venv/
+.venv/
+
+# ================================
+# Arquivos gerados pelo ETL
+# ================================
+entrada/
+saida/
+logs/
+
+# Mantém a estrutura, mas ignora o conteúdo
+!entrada/.gitkeep
+!saida/.gitkeep
+!logs/.gitkeep
+
+# ================================
+# Arquivos temporários do sistema
+# ================================
+*.log
+*.tmp
+*.bak
+
+# ================================
+# Configurações do editor
+# ================================
+.vscode/
+.idea/
