@@ -2,7 +2,7 @@ from pathlib import Path
 from funcoes.extrair import extrair_texto_pdf_inteligente
 from funcoes.limpar import limpar_texto
 from funcoes.log import registrar
-from funcoes.campos import extrair_cnpj
+from funcoes.campos import extrair_cnpj, extrair_data
 
 pasta_entrada = Path("entrada")
 pasta_saida = Path("saida")
@@ -14,6 +14,11 @@ for pdf in pasta_entrada.glob("*.pdf"):
 		texto = extrair_texto_pdf_inteligente(pdf)
 		texto = limpar_texto(texto)
 
+		# === EXTRAIR DATA DO TEXTO ===
+		data_encontrada = extrair_data(texto) or ""
+		print(f"Data encontrada: {data_encontrada}")
+		registrar(f"Data detectada en {pdf.name}: {data_encontrada}")
+
 		# === EXTRAIR CNPJ DO TEXTO ===
 		cnpj = extrair_cnpj(texto) or ""
 		print(f"CNPJ detectado: {cnpj}")
@@ -21,7 +26,7 @@ for pdf in pasta_entrada.glob("*.pdf"):
 
 		# Salvar no CSV
 		with open("dados_extraidos.csv", "a", encoding="utf-8") as csv:
-			csv.write(f"{pdf.name}: {cnpj}\n")
+			csv.write(f"{pdf.name}: {cnpj},{data_encontrada}\n")
 	except Exception as e:
 		mensagem_erro = f"ERRO ao processar {pdf.name}: {e}"
 		print(mensagem_erro)

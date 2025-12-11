@@ -22,3 +22,14 @@ def extrair_cnpj(texto: str) -> str | None:
 
     return None
 
+def extrair_data(texto: str) -> str | None:
+	"""
+	Procura uma data no formato dd/mm/aaaa ou dd-mm-aaaa
+	e retorna a primeira encontrada
+	"""
+	padrao_data = r"\b\d{2}[/-]\d{2}[/-]\d{4}\b"
+	encontrado = re.search(padrao_data, texto)
+	if encontrado:
+		return encontrado.group(0)
+	return None
+
